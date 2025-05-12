@@ -197,6 +197,16 @@
     once: true, // anima uma vez só
     duration: 800 // tempo da animação
   });
+ 
+  const menuIcon = document.getElementById('menu-icon');
+  const navLeft = document.querySelector('.nav-left');
+  const navRight = document.querySelector('.nav-right');
+
+  menuIcon.addEventListener('click', () => {
+    navLeft.classList.toggle('show');
+    navRight.classList.toggle('show');
+  });
+
 </script>
 
     
